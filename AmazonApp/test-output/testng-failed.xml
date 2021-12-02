@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="1" name="chromeTest(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="TestClasses.VerifyAmazonOrderList">
+        <methods>
+          <include name="verifyYourOrders"/>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
+          <include name="launchBrowser"/>
+          <include name="verifyLoginToAmazon"/>
+          <include name="verifyWishListOfAmazon"/>
+          <include name="afterClass"/>
+          <include name="verifyLogOutFromAmazon"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyAmazonOrderList -->
+    </classes>
+  </test> <!-- chromeTest(failed) -->
+  <test thread-count="1" name="fireFoxTest(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="TestClasses.VerifyAmazonOrderList">
+        <methods>
+          <include name="verifyYourOrders"/>
+          <include name="closeBrowser"/>
+          <include name="launchApplication"/>
+          <include name="launchBrowser"/>
+          <include name="verifyLoginToAmazon"/>
+          <include name="verifyWishListOfAmazon"/>
+          <include name="afterClass"/>
+          <include name="verifyLogOutFromAmazon"/>
+        </methods>
+      </class> <!-- TestClasses.VerifyAmazonOrderList -->
+    </classes>
+  </test> <!-- fireFoxTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->

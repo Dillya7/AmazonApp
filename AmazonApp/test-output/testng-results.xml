@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="0" skipped="4">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-29T12:35:29 IST" name="Suite" finished-at="2021-11-29T12:35:55 IST" duration-ms="25790">
+    <groups>
+    </groups>
+    <test started-at="2021-11-29T12:35:29 IST" name="chromeTest" finished-at="2021-11-29T12:35:54 IST" duration-ms="25561">
+      <class name="TestClasses.VerifyAmazonOrderList">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:29 IST" name="launchBrowser" finished-at="2021-11-29T12:35:36 IST" duration-ms="6623" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:36 IST" name="launchApplication" finished-at="2021-11-29T12:35:53 IST" duration-ms="17247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="verifyLoginToAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:53 IST" name="verifyLoginToAmazon" finished-at="2021-11-29T12:35:54 IST" duration-ms="1478" status="FAIL">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]
+at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:309)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:208)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:172)
+at UtilityPackage.UtilityClass.excelSheet(UtilityClass.java:30)
+at pomPackage.LoginPage.amazonLogin(LoginPage.java:37)
+at TestClasses.VerifyAmazonOrderList.verifyLoginToAmazon(VerifyAmazonOrderList.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAmazon -->
+        <test-method signature="verifyWishListOfAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="verifyWishListOfAmazon" finished-at="2021-11-29T12:35:54 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]
+at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:309)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:208)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:172)
+at UtilityPackage.UtilityClass.excelSheet(UtilityClass.java:30)
+at pomPackage.LoginPage.amazonLogin(LoginPage.java:37)
+at TestClasses.VerifyAmazonOrderList.verifyLoginToAmazon(VerifyAmazonOrderList.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishListOfAmazon -->
+        <test-method is-config="true" signature="verifyLogOutFromAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="verifyLogOutFromAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169554914" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOutFromAmazon -->
+        <test-method is-config="true" signature="verifyLoginToAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="verifyLoginToAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169554922" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAmazon -->
+        <test-method signature="verifyYourOrders()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="verifyYourOrders" finished-at="2021-11-29T12:35:54 IST" duration-ms="0" status="SKIP">
+          <exception class="java.io.IOException">
+            <message>
+              <![CDATA[Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.io.IOException: Your InputStream was neither an OLE2 stream, nor an OOXML stream or you haven't provide the poi-ooxml*.jar in the classpath/modulepath - FileMagic: OOXML, having providers: [org.apache.poi.hssf.usermodel.HSSFWorkbookFactory@31e72cbc]
+at org.apache.poi.ss.usermodel.WorkbookFactory.wp(WorkbookFactory.java:309)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:208)
+at org.apache.poi.ss.usermodel.WorkbookFactory.create(WorkbookFactory.java:172)
+at UtilityPackage.UtilityClass.excelSheet(UtilityClass.java:30)
+at pomPackage.LoginPage.amazonLogin(LoginPage.java:37)
+at TestClasses.VerifyAmazonOrderList.verifyLoginToAmazon(VerifyAmazonOrderList.java:60)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestInvoker.runConfigMethods(TestInvoker.java:700)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:527)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.io.IOException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYourOrders -->
+        <test-method is-config="true" signature="verifyLogOutFromAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="verifyLogOutFromAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169554936" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOutFromAmazon -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169554940" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.VerifyAmazonOrderList@169e6180]" started-at="2021-11-29T12:35:54 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169554948" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestClasses.VerifyAmazonOrderList -->
+    </test> <!-- chromeTest -->
+    <test started-at="2021-11-29T12:35:55 IST" name="fireFoxTest" finished-at="2021-11-29T12:35:55 IST" duration-ms="140">
+      <class name="TestClasses.VerifyAmazonOrderList">
+        <test-method is-config="true" signature="launchBrowser(java.lang.String)[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="launchBrowser" finished-at="2021-11-29T12:35:55 IST" duration-ms="1" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at TestClasses.VerifyAmazonOrderList.launchBrowser(VerifyAmazonOrderList.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="launchApplication" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555123" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method is-config="true" signature="verifyLoginToAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyLoginToAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555130" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAmazon -->
+        <test-method signature="verifyWishListOfAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyWishListOfAmazon" finished-at="2021-11-29T12:35:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at TestClasses.VerifyAmazonOrderList.launchBrowser(VerifyAmazonOrderList.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyWishListOfAmazon -->
+        <test-method is-config="true" signature="verifyLogOutFromAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyLogOutFromAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555143" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOutFromAmazon -->
+        <test-method is-config="true" signature="verifyLoginToAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyLoginToAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555147" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginToAmazon -->
+        <test-method signature="verifyYourOrders()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyYourOrders" finished-at="2021-11-29T12:35:55 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because "this.driver" is null
+at TestClasses.VerifyAmazonOrderList.launchBrowser(VerifyAmazonOrderList.java:42)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:78)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+at org.testng.TestRunner.run(TestRunner.java:589)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyYourOrders -->
+        <test-method is-config="true" signature="verifyLogOutFromAmazon()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="verifyLogOutFromAmazon" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555158" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogOutFromAmazon -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="afterClass" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555167" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:TestClasses.VerifyAmazonOrderList@550dbc7a]" started-at="2021-11-29T12:35:55 IST" name="closeBrowser" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1638169555175" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- TestClasses.VerifyAmazonOrderList -->
+    </test> <!-- fireFoxTest -->
+  </suite> <!-- Suite -->
+</testng-results>
